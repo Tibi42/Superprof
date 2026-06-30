@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int a = 10, b = 5;
+
+    int somme = a + b;
+    int difference = a - b;
+    int produit = a * b;
+    float quotient = a / b;
+
+    int modulo = a % b;
+
+    printf("%d\n", somme);
+    printf("%d\n", difference);
+    printf("%d\n", produit);
+    printf("%f\n", quotient);
+    printf("%d\n", modulo);
+
+    return 0;
+}

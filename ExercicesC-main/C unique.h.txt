@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int unique(int tableau[], int el_uniques[]) {
+	int a = tableau[0];
+    el_uniques[0] = a;
+    int n_u = 1;
+    int i, b, j, bouleen;
+    
+    for(i=1; i<10; i++){
+    	b=tableau[i];
+        bouleen = 1; 
+        for(j=0; j<n_u; j++){
+        	a = el_uniques[j];
+            if(a == b){
+            	bouleen = 0;
+            	break;
+            }
+        }
+        if(bouleen == 1){
+        	n_u++ ;
+            el_uniques[n_u-1] = b;
+        }
+    }
+    return n_u;
+}
+
+int main() {
+  int myNumbers[] = {1, 50, 75, 100, 5, 1, 75, 3, 100, 1};
+  int resultat[10];
+  int i;
+  for(i=0; i<10; i++){
+   resultat[i] = 0;
+  }
+  int n_unique = unique(myNumbers, resultat);
+ 
+  for(i=0; i<n_unique; i++){
+  	printf("%d\n", resultat[i]);
+  }
+  return 0;
+}
