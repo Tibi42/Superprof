@@ -15,7 +15,7 @@ int main(void)
 
     do {
         printf("Entrez le mot de passe : ");
-        scanf("%19s", motDePasse);
+        scanf("%s", motDePasse);
 
         if (strcmp(motDePasse, "secret123") != 0) {
             printf("Mot de passe incorrect\n");
