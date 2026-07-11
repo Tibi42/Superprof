@@ -10,7 +10,7 @@
 
 // L'utilisateur choisit une opération puis saisit deux nombres.
 
-include <stdio.h>
+#include <stdio.h>
 
 int main(void)
 {
