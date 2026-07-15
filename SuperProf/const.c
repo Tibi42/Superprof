@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 int main()
@@ -9,5 +10,6 @@ int main()
     printf("Who are you? ");
     fgets(name, size, stdin);
     printf("Glad to meet you, %s.\n",name);
+    system("pause");
     return(0);
 }

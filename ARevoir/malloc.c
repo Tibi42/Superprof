@@ -14,9 +14,7 @@ int main() {
   scanf("%d", &NbNotes);
 
   float *notes = NULL;
-  notes =
-      malloc(NbNotes *
-             sizeof(float)); // notes est la premiere case de la memoire réservée
+  notes = malloc(NbNotes * sizeof(float)); // notes est la premiere case de la memoire réservée
     
  // si le malloc ne fonctionne pas arreter le programme
  if(notes == NULL){return 1;}
