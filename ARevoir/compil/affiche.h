@@ -1,0 +1,1 @@
+void affiche(char* msg);

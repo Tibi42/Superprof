@@ -1,0 +1,1 @@
+dans la matrice de noomrbe trouver le f=plus failbe nombre du tableau
